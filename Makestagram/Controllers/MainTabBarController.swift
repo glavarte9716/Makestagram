@@ -10,12 +10,17 @@ import Foundation
 import UIKit
 
 class MainTabBarController: UITabBarController {
+    
+    let photoHelper = MGPhotoHelper()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 1
+        photoHelper.completionHandler = { image in
+            PostService.create(for: image)
+        }
+        
         delegate = self
-        // 2
         tabBar.unselectedItemTintColor = .black
     }
 }
