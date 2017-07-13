@@ -20,6 +20,8 @@
 		968B5B241F167708006585B2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B5B231F167708006585B2 /* Post.swift */; };
 		968B5B261F167757006585B2 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B5B251F167757006585B2 /* PostService.swift */; };
 		968B5B281F167858006585B2 /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B5B271F167858006585B2 /* StorageReference+Post.swift */; };
+		968B5B2A1F1693F4006585B2 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968B5B291F1693F4006585B2 /* Home.storyboard */; };
+		968B5B2C1F16A348006585B2 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B5B2B1F16A348006585B2 /* PostImageCell.swift */; };
 		969D63621F0D3E890092C08E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969D63611F0D3E890092C08E /* Assets.xcassets */; };
 		969D636F1F0D64E70092C08E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969D636E1F0D64E70092C08E /* AppDelegate.swift */; };
 		969D63731F0D65170092C08E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 969D63721F0D65170092C08E /* Main.storyboard */; };
@@ -46,6 +48,8 @@
 		968B5B231F167708006585B2 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = Models/Post.swift; sourceTree = "<group>"; };
 		968B5B251F167757006585B2 /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostService.swift; path = Services/PostService.swift; sourceTree = "<group>"; };
 		968B5B271F167858006585B2 /* StorageReference+Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "StorageReference+Post.swift"; path = "Extensions/StorageReference+Post.swift"; sourceTree = "<group>"; };
+		968B5B291F1693F4006585B2 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Storyboards/Home.storyboard; sourceTree = "<group>"; };
+		968B5B2B1F16A348006585B2 /* PostImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostImageCell.swift; path = Views/PostImageCell.swift; sourceTree = "<group>"; };
 		969D63571F0D3E890092C08E /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		969D63611F0D3E890092C08E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		969D636E1F0D64E70092C08E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +115,14 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		968B5B2D1F16A34D006585B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				968B5B2B1F16A348006585B2 /* PostImageCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		969D634E1F0D3E890092C08E = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +153,7 @@
 				961BE0611F0FFB380060EBBE /* Services */,
 				96DF89931F101FE000572534 /* Extensions */,
 				9627EFDE1F153CF90058F6BC /* Helpers */,
+				968B5B2D1F16A34D006585B2 /* Views */,
 			);
 			path = Makestagram;
 			sourceTree = "<group>";
@@ -149,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				969D63721F0D65170092C08E /* Main.storyboard */,
+				968B5B291F1693F4006585B2 /* Home.storyboard */,
 				96C815AC1F0E781C0095A177 /* Login.storyboard */,
 			);
 			name = Storyboards;
@@ -262,6 +276,7 @@
 				969D63751F0D65390092C08E /* LaunchScreen.storyboard in Resources */,
 				969D63791F0D66030092C08E /* GoogleService-Info.plist in Resources */,
 				969D63621F0D3E890092C08E /* Assets.xcassets in Resources */,
+				968B5B2A1F1693F4006585B2 /* Home.storyboard in Resources */,
 				96C815AD1F0E781C0095A177 /* Login.storyboard in Resources */,
 				969D63731F0D65170092C08E /* Main.storyboard in Resources */,
 			);
@@ -328,6 +343,7 @@
 				9627EFDB1F1531440058F6BC /* MainTabBarController.swift in Sources */,
 				961BE0601F0FFB340060EBBE /* UserService.swift in Sources */,
 				968B5B221F167689006585B2 /* UIImage+Size.swift in Sources */,
+				968B5B2C1F16A348006585B2 /* PostImageCell.swift in Sources */,
 				965DE95A1F14150F002565A1 /* HomeViewController.swift in Sources */,
 				9627EFDD1F153CF30058F6BC /* MGPhotoHelper.swift in Sources */,
 				96DF89921F101FDD00572534 /* Storyboard+Utility.swift in Sources */,
